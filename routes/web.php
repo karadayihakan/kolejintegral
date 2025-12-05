@@ -156,7 +156,6 @@ Route::middleware(CheckIsAdmin::class)->prefix('/dashboard')->name('dashboard.')
       Route::post('/{pageId}/sections', [\App\Http\Controllers\Admin\PageController::class, 'storeSection'])->name('sections.store');
       Route::get('/{pageId}/sections/{sectionId}/edit', [\App\Http\Controllers\Admin\PageController::class, 'editSection'])->name('sections.edit');
       Route::post('/{pageId}/sections/{sectionId}', [\App\Http\Controllers\Admin\PageController::class, 'updateSection'])->name('sections.update');
-      Route::put('/{pageId}/sections/{sectionId}', [\App\Http\Controllers\Admin\PageController::class, 'updateSection'])->name('sections.update');
       Route::delete('/{pageId}/sections/{sectionId}', [\App\Http\Controllers\Admin\PageController::class, 'destroySection'])->name('sections.destroy');
     });
 })->middleware('role:admin');
