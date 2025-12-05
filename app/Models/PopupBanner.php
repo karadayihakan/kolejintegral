@@ -14,7 +14,6 @@ class PopupBanner extends Model
     ];
 
     protected $casts = [
-        'branches' => 'array',
         'is_active' => 'boolean',
     ];
 
