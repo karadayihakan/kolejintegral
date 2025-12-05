@@ -103,6 +103,6 @@ INSERT INTO `hero_sliders` (`id`, `title`, `subtitle`, `button_text`, `button_ur
 
 -- Table: popup_banners
 DELETE FROM `popup_banners`;
-INSERT INTO `popup_banners` (`id`, `title`, `subtitle`, `button_text`, `date_text`, `free_label`, `application_centers_text`, `website_url`, `branches`, `background_image`, `order`, `is_active`, `created_at`, `updated_at`, `link`) VALUES (1, 'Bursluluk Sınavı', NULL, NULL, NULL, 'ÜCRETSİZ', NULL, NULL, NULL, 'popup-banners/87R5iw24s0MaSnV5qmiMOinIhufyR0pQPv4rcUEA.jpg', 0, 1, '2025-12-04 16:40:45', '2025-12-04 16:40:45', 'https://integral.eyotek.com/v1/Pages/scholarship-application');
+INSERT INTO `popup_banners` (`id`, `title`, `background_image`, `order`, `is_active`, `created_at`, `updated_at`, `link`) VALUES (1, 'Bursluluk Sınavı', 'popup-banners/87R5iw24s0MaSnV5qmiMOinIhufyR0pQPv4rcUEA.jpg', 0, 1, '2025-12-04 16:40:45', '2025-12-04 16:40:45', 'https://integral.eyotek.com/v1/Pages/scholarship-application');
 
 SET FOREIGN_KEY_CHECKS=1;
