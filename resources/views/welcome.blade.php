@@ -1701,12 +1701,7 @@ $('a').click(function() {
           <div style="display: flex; flex-direction: column; flex: 1; height: 100%; min-height: 0;">
         @endif
         @if($popupImageSrc)
-          <img src="{{ $popupImageSrc }}" alt="{{ $popupBanner->title }}" class="popup-banner-image">
-        @endif
-        @if($popupBanner->title)
-          <div style="padding: 20px; text-align: center; background: white; flex-shrink: 0;">
-            <h3 style="margin: 0; color: #333; font-size: 24px;">{{ $popupBanner->title }}</h3>
-          </div>
+          <img src="{{ $popupImageSrc }}" alt="{{ $popupBanner->title ?? 'Popup Banner' }}" class="popup-banner-image">
         @endif
         @if($popupBanner->link)
           </a>
