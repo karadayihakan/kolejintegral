@@ -138,39 +138,6 @@ body {
       background: #000;
     }
 
-    /* Modal içindeki Swiper stilleri */
-    #modal4 .swiper-about .swiper-slide {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      padding: 20px;
-    }
-
-    #modal4 .swiper-about .swiper-slide * {
-      text-align: center;
-      color: black !important;
-    }
-
-    #modal4 .swiper-about .swiper-slide img {
-      width: 64px;
-      height: 64px;
-      margin-bottom: 10px;
-    }
-
-    #modal4 .swiper-about .swiper-slide h4 {
-      font-size: 20px;
-      font-weight: bold;
-      margin: 10px 0;
-      color: black !important;
-    }
-
-    #modal4 .swiper-about .swiper-slide p {
-      font-weight: 400;
-      font-size: 16px;
-      color: black !important;
-      line-height: 1.6;
-    }
 </style>
 
 </head>
@@ -333,10 +300,7 @@ body {
 
             $buttonUrl = $slide->button_url ?: '#';
             $buttonText = $slide->button_text ?: "Kolej İntegral'de Beni Neler Bekliyor?";
-            // Eğer button_url varsa ve # değilse modal açma, direkt link'e git
-            $isModalButton = empty($slide->button_url) || $slide->button_url === '#';
-            $buttonClass = $isModalButton ? 'cta-button trigger' : 'cta-button';
-            $buttonDataModal = $isModalButton ? 'data-modal="modal4"' : '';
+            $buttonClass = 'cta-button';
           @endphp
           <div class="swiper-slide" style="background-image: url('{{ $bgImage }}');">
             <div class="container">
@@ -344,7 +308,7 @@ body {
               @if($slide->subtitle)
                 <p>{{ $slide->subtitle }}</p>
               @endif
-              <a href="{{ $buttonUrl }}" class="{{ $buttonClass }}" {!! $buttonDataModal !!} style="display:flex;align-items:center;gap:10px;">
+              <a href="{{ $buttonUrl }}" class="{{ $buttonClass }}" style="display:flex;align-items:center;gap:10px;">
                 <img src="/images/integral-logo.png" alt="Kolej İntegral" width="52" height="52">
                 {{ $buttonText }}
               </a>
@@ -355,7 +319,7 @@ body {
             <div class="container">
               <h2>Okul Öncesi</h2>
               <p>Kolej İntegral'de erken yaşta eğitimle geleceğe hazırlanın.</p>
-              <a href="#" class="cta-button trigger" data-modal="modal4" style="display:flex;align-items:center;gap:10px;">
+              <a href="{{ route('about') }}" class="cta-button" style="display:flex;align-items:center;gap:10px;">
                 <img src="/images/integral-logo.png" alt="Kolej İntegral" width="52" height="52">
                 Kolej İntegral'de Beni Neler Bekliyor?
               </a>
@@ -1024,86 +988,6 @@ body {
           </div>
         </div>
 
-        <div id="modal4" class="modal">
-          <div class="modal-content">
-            <h2 style="display:flex;align-items:center;gap:10px; justify-content: center; margin-bottom: 30px;">
-              <img src="/images/integral-logo.png" alt="Kolej İntegral" width="64" height="64">
-              <span>Hakkımızda</span>
-            </h2>
-            <div style="max-width: 800px; margin: 0 auto 40px; text-align: center;">
-              <p style="font-size: 18px; line-height: 1.8; margin-bottom: 30px;">
-                Kolej İntegral, eğitimde "Okul Ötesi" anlayışıyla öğrencilerine sadece akademik başarı değil, 
-                aynı zamanda kişisel gelişim, değerler eğitimi ve geleceğe hazırlık konularında kapsamlı bir eğitim sunmaktadır. 
-                Modern eğitim teknolojileri, deneyimli öğretmen kadromuz ve öğrenci odaklı yaklaşımımızla, 
-                her öğrencinin potansiyelini en üst seviyeye çıkarmayı hedefliyoruz.
-              </p>
-            </div>
-            
-            <div class="swiper-container" style="margin: 40px 0;">
-              <div class="swiper-about">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="/images/icons/studyhall.png" alt="Study H'all" />
-                    <h4>Study H'all</h4>
-                    <p>Her öğrencinin sadece kendine ait çalışma alanının olduğu çalışma salonu.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/golgekoc.png" alt="Gölge Koç" />
-                    <h4>Gölge Koç</h4>
-                    <p>Öğrencinin sınav sürecini planlayıp onu adım adım takip ederek potansiyelini en iyi şekilde açığa çıkaran uzman.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/endenekulup.png" alt="En Deneme Kulübü" />
-                    <h4>En Deneme Kulübü</h4>
-                    <p>Türkiye genelinde 200'ü aşkın şubenin katıldığı sınav kulübü.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/tipkiprova.png" alt="Tıpkı Prova" />
-                    <h4>Tıpkı Prova</h4>
-                    <p>Tüm Türkiye'de aynı anda, gerçek sınav salonlarında ve gerçek sınav kurallarıyla yapılan oldukça geniş katılımlı sınav.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/allstar.png" alt="ÜçDörtBeş All Star" />
-                    <h4>ÜçDörtBeş All Star</h4>
-                    <p>Basılı materyal ile dijital öğrenmenin olanaklarının kullanıldığı ve kendi içinde ölçme değerlendirme sistemi olan sınav hazırlık seti.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/kunduz.png" alt="Kunduz" />
-                    <h4>Kunduz</h4>
-                    <p>Türkiye'nin en geniş ağına sahip dijital soru çözüm platformu.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/enozelders.png" alt="En Özel Ders" />
-                    <h4>En Özel Ders</h4>
-                    <p>Eksik konuların "En Deneyim"li öğretmenler vasıtasıyla bire bir ve yüz yüze anlatıldığı ders.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/studybox.png" alt="Study Box" />
-                    <h4>Study Box</h4>
-                    <p>Bire bir ve grup derslerinin masa başında yapıldığı modern sınıf.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/encoffe.png" alt="En Coffe" />
-                    <h4>En Coffe</h4>
-                    <p>Ders aralarında keyifli sohbetlerin yapıldığı şık ve nezih sosyal alan.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/guvenlik.png" alt="Gelişmiş Güvenlik" />
-                    <h4>Gelişmiş Güvenlik</h4>
-                    <p>Öğrencilerin kendilerine tanımlı kartlarla giriş çıkış yapmalarına olanak sağlayan güvenlik sistemi.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/icons/enapp.png" alt="En App" />
-                    <h4>En App</h4>
-                    <p>Öğrencilerin ve velilerin bilgilendirilmesi amacıyla kullanılan aplikasyon sistemi.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <button class="close" data-modal="modal4">Kapat</button>
-          </div>
-        </div>
 
         <div id="modalcta" class="modal">
           <div class="modal-content">
@@ -1385,43 +1269,17 @@ $('a').click(function() {
     const modals = document.querySelectorAll('.modal');
 
     // Trigger event'ini tanımla
-    let swiperAboutModal = null;
     triggers.forEach(trigger => {
       trigger.addEventListener('click', function (e) {
         e.preventDefault();
         const modalId = this.getAttribute('data-modal');
+        // Modal4 kaldırıldı, sadece diğer modallar için çalış
+        if (modalId === 'modal4') {
+          return;
+        }
         const modal = document.getElementById(modalId);
-        modal.style.display = 'flex';
-        
-        // Modal4 (Hakkımızda) açıldığında Swiper'ı initialize et
-        if (modalId === 'modal4' && !swiperAboutModal) {
-          setTimeout(() => {
-            const swiperElement = modal.querySelector('.swiper-about');
-            if (swiperElement) {
-              swiperAboutModal = new Swiper(swiperElement, {
-                loop: true,
-                autoplay: {
-                  delay: 5000,
-                },
-                slidesPerView: 1,
-                spaceBetween: 10,
-                breakpoints: {
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                  },
-                  1600: {
-                    slidesPerView: 5,
-                    spaceBetween: 50,
-                  },
-                },
-              });
-            }
-          }, 100);
+        if (modal) {
+          modal.style.display = 'flex';
         }
       });
     });
@@ -1457,12 +1315,6 @@ $('a').click(function() {
           } else {
             modal.style.setProperty('display', 'none', 'important');
             document.body.style.overflow = '';
-            
-            // Modal4 kapatıldığında Swiper'ı temizle
-            if (modalId === 'modal4' && swiperAboutModal) {
-              swiperAboutModal.destroy(true, true);
-              swiperAboutModal = null;
-            }
           }
         }
       });
@@ -1482,12 +1334,6 @@ $('a').click(function() {
           } else {
             this.style.setProperty('display', 'none', 'important');
             document.body.style.overflow = '';
-            
-            // Modal4 kapatıldığında Swiper'ı temizle
-            if (this.id === 'modal4' && swiperAboutModal) {
-              swiperAboutModal.destroy(true, true);
-              swiperAboutModal = null;
-            }
           }
         }
       });
