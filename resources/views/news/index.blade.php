@@ -116,7 +116,27 @@
     <div style="padding: 40px 0 60px 0; background-color: white;">
     <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 40px 20px;">
       @if($news->count() > 0)
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: end; justify-items: center;">
+        <style>
+          .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: end;
+            justify-items: center;
+            width: 100%;
+          }
+          @media (max-width: 1024px) {
+            .news-grid {
+              grid-template-columns: repeat(2, 1fr) !important;
+            }
+          }
+          @media (max-width: 768px) {
+            .news-grid {
+              grid-template-columns: 1fr !important;
+            }
+          }
+        </style>
+        <div class="news-grid">
           @foreach($news as $item)
             <a href="{{ route('news.show', $item->slug) }}" style="text-decoration: none; display: block; height: 100%; width: 100%; max-width: 400px;">
               <div class="haber-kart" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
