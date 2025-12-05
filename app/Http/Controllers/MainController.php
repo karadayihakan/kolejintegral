@@ -8,6 +8,7 @@ use App\Models\Setting;
 use App\Models\Gallery;
 use App\Models\HeroSlider;
 use App\Models\Menu;
+use App\Models\PopupBanner;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -49,6 +50,9 @@ class MainController extends Controller
       // Genel menü öğeleri (branch_id null)
       $menus = Menu::active()->general()->ordered()->get();
 
+      // Aktif popup banner
+      $popupBanner = PopupBanner::active()->first();
+
       return view('welcome', compact(
           'branches',
           'news',
@@ -59,7 +63,8 @@ class MainController extends Controller
           'galleries',
           'homepageUnits',
           'heroSliders',
-          'menus'
+          'menus',
+          'popupBanner'
       ));
     }
 
