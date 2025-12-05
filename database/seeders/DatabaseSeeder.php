@@ -32,6 +32,7 @@ class DatabaseSeeder extends Seeder
             StaticPagesSeeder::class,
             AboutPageSectionsSeeder::class,
             MenuSeeder::class,
+            PopupBannerSeeder::class,
         ]);
     }
 }
