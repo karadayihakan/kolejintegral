@@ -1,0 +1,11 @@
+node_modules/
+vendor/
+.git/
+.env
+.env.backup
+.phpunit.result.cache
+storage/logs/*
+!storage/logs/.gitkeep
+bootstrap/cache/*
+!bootstrap/cache/.gitkeep
+
