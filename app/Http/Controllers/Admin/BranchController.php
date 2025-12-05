@@ -77,11 +77,6 @@ class BranchController extends Controller
             'phone' => 'nullable|string|max:20',
         ];
 
-        // Şifre sadece yeni kullanıcı oluşturulurken veya güncellenirken zorunlu
-        if (!$request->user_id || $request->password) {
-            $rules['password'] = 'nullable|string|min:6|confirmed';
-        }
-
         $validated = $request->validate($rules);
 
         // Handle logo upload
@@ -121,14 +116,33 @@ class BranchController extends Controller
             'role' => 'branch_admin',
         ];
 
-        if ($request->password) {
-            $userData['password'] = Hash::make($request->password);
-        } elseif ($request->user_id) {
-            // Mevcut şifreyi koru
+        // Phone alanını yönet
+        if ($request->user_id) {
+            // Mevcut kullanıcı varsa telefon numarasını koru veya güncelle
             $existingUser = User::find($request->user_id);
             if ($existingUser) {
-                $userData['password'] = $existingUser->password;
+                $userData['phone'] = $request->phone ?? $existingUser->phone;
+            } else {
+                $userData['phone'] = $request->phone ?? '';
             }
+        } else {
+            // Yeni kullanıcı için telefon numarası zorunlu
+            $userData['phone'] = $request->phone ?? '';
+        }
+
+        // Password yönetimi - sadece mevcut kullanıcı varsa şifresini koru
+        if ($request->user_id) {
+            $existingUser = User::find($request->user_id);
+            if ($existingUser && $existingUser->password) {
+                // Mevcut şifreyi koru
+                $userData['password'] = $existingUser->password;
+            } else {
+                // Şifre yoksa rastgele bir şifre oluştur (users tablosu için zorunlu)
+                $userData['password'] = Hash::make(uniqid('branch_', true));
+            }
+        } else {
+            // Yeni kullanıcı için rastgele şifre oluştur (users tablosu için zorunlu)
+            $userData['password'] = Hash::make(uniqid('branch_', true));
         }
 
         $user = User::updateOrCreate(
