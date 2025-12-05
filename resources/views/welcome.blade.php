@@ -1561,9 +1561,107 @@ $('a').click(function() {
 
   <!-- Popup Banner -->
   @if(isset($popupBanner) && $popupBanner)
-    <div id="popupBannerModal" class="popup-banner-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 10000; align-items: center; justify-content: center;">
-      <div class="popup-banner-content" style="position: relative; max-width: 90%; height: 90vh; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; flex-direction: column;">
-        <button class="popup-banner-close" style="position: absolute; top: 15px; right: 15px; background: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; z-index: 10001; display: flex; align-items: center; justify-content: center; font-size: 24px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='#f0f0f0';" onmouseout="this.style.transform='scale(1)'; this.style.background='white';">
+    <style>
+      .popup-banner-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .popup-banner-content {
+        position: relative;
+        max-width: 90%;
+        width: 90%;
+        height: 90vh;
+        max-height: 90vh;
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .popup-banner-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10001;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #333;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: all 0.3s;
+      }
+      
+      .popup-banner-close:hover {
+        transform: scale(1.1);
+        background: #f0f0f0;
+      }
+      
+      .popup-banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        flex: 1;
+      }
+      
+      /* Mobil için responsive ayarlar */
+      @media (max-width: 768px) {
+        .popup-banner-content {
+          max-width: 95%;
+          width: 95%;
+          height: 95vh;
+          max-height: 95vh;
+          border-radius: 10px;
+        }
+        
+        .popup-banner-close {
+          width: 35px;
+          height: 35px;
+          font-size: 20px;
+          top: 10px;
+          right: 10px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .popup-banner-content {
+          max-width: 100%;
+          width: 100%;
+          height: 100vh;
+          max-height: 100vh;
+          border-radius: 0;
+        }
+        
+        .popup-banner-close {
+          width: 30px;
+          height: 30px;
+          font-size: 18px;
+          top: 8px;
+          right: 8px;
+        }
+      }
+    </style>
+    <div id="popupBannerModal" class="popup-banner-overlay">
+      <div class="popup-banner-content">
+        <button class="popup-banner-close">
           ×
         </button>
         @php
@@ -1587,10 +1685,12 @@ $('a').click(function() {
           }
         @endphp
         @if($popupBanner->link)
-          <a href="{{ $popupBanner->link }}" target="_blank" style="display: flex; flex-direction: column; flex: 1; text-decoration: none; height: 100%;">
+          <a href="{{ $popupBanner->link }}" target="_blank" style="display: flex; flex-direction: column; flex: 1; text-decoration: none; height: 100%; min-height: 0;">
+        @else
+          <div style="display: flex; flex-direction: column; flex: 1; height: 100%; min-height: 0;">
         @endif
         @if($popupImageSrc)
-          <img src="{{ $popupImageSrc }}" alt="{{ $popupBanner->title }}" style="width: 100%; height: 100%; object-fit: contain; display: block; flex: 1;">
+          <img src="{{ $popupImageSrc }}" alt="{{ $popupBanner->title }}" class="popup-banner-image">
         @endif
         @if($popupBanner->title)
           <div style="padding: 20px; text-align: center; background: white; flex-shrink: 0;">
@@ -1599,6 +1699,8 @@ $('a').click(function() {
         @endif
         @if($popupBanner->link)
           </a>
+        @else
+          </div>
         @endif
       </div>
     </div>
