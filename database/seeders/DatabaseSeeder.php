@@ -35,6 +35,8 @@ class DatabaseSeeder extends Seeder
             MenuSeeder::class,
             PopupBannerSeeder::class,
             MagazineSeeder::class,
+            HeroSliderSeeder::class,
+            RegisterPdfSeeder::class,
         ]);
     }
 }
