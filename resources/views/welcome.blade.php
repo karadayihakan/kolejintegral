@@ -514,7 +514,7 @@ body {
           border-color: #ffffff !important;
         }
       </style>
-      <div class="class-items" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin: 50px auto 0; max-width: 1200px;">
+      <div class="class-items" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; margin: 50px auto 0; max-width: 1400px;">
         @forelse($homepageUnits as $branch)
           @php
             // Hero görsel varsa onu kullan, yoksa type'a göre varsayılan görseli kullan
@@ -729,7 +729,7 @@ body {
 <path d="M14.4373 13.1042C15.1834 12.3583 15.6915 11.408 15.8974 10.3734C16.1033 9.33882 15.9978 8.26638 15.5942 7.29175C15.1906 6.31712 14.507 5.48407 13.6299 4.89796C12.7528 4.31186 11.7216 3.99902 10.6667 3.99902C9.61176 3.99902 8.58055 4.31186 7.70346 4.89796C6.82636 5.48407 6.14277 6.31712 5.73915 7.29175C5.33553 8.26638 5.23001 9.33882 5.43593 10.3734C5.64185 11.408 6.14996 12.3583 6.896 13.1042L10.6667 16.8762L14.4373 13.1042Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
               <p style="color:white; line-height: 1.6; margin: 0; max-width: 420px;">
-                {{ $settings['address_left'] ?? ($ilkogretimBranch->address ?? 'Kartaltepe Mahallesi, Yunusnadi Sokak No:2, Bakırköy / İstanbul') }}
+                {{ $settings['address_left'] ?? ($homepageUnits->first()->address ?? 'Kartaltepe Mahallesi, Yunusnadi Sokak No:2, Bakırköy / İstanbul') }}
               </p>
             </div>
             
@@ -767,8 +767,8 @@ body {
                   } else {
                       $leftSrc = trim($leftEmbed);
                   }
-              } elseif ($ilkogretimBranch && $ilkogretimBranch->map_embed_url) {
-                  $leftSrc = $ilkogretimBranch->map_embed_url;
+              } elseif ($homepageUnits->first() && $homepageUnits->first()->map_embed_url) {
+                  $leftSrc = $homepageUnits->first()->map_embed_url;
               }
             @endphp
             @if($leftSrc)
@@ -790,7 +790,7 @@ body {
                 <path d="M14.4373 13.1042C15.1834 12.3583 15.6915 11.408 15.8974 10.3734C16.1033 9.33882 15.9978 8.26638 15.5942 7.29175C15.1906 6.31712 14.507 5.48407 13.6299 4.89796C12.7528 4.31186 11.7216 3.99902 10.6667 3.99902C9.61176 3.99902 8.58055 4.31186 7.70346 4.89796C6.82636 5.48407 6.14277 6.31712 5.73915 7.29175C5.33553 8.26638 5.23001 9.33882 5.43593 10.3734C5.64185 11.408 6.14996 12.3583 6.896 13.1042L10.6667 16.8762L14.4373 13.1042Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               <p style="color:white; line-height: 1.6; margin: 0; max-width: 420px;">
-                {{ $settings['address_right'] ?? ($liseBranch->address ?? 'Yeşilköy Mahallesi, Atatürk Caddesi No:45, Bakırköy / İstanbul') }}
+                {{ $settings['address_right'] ?? ($homepageUnits->skip(1)->first()->address ?? ($homepageUnits->first()->address ?? 'Yeşilköy Mahallesi, Atatürk Caddesi No:45, Bakırköy / İstanbul')) }}
               </p>
         </div>
             
@@ -828,8 +828,10 @@ body {
                   } else {
                       $rightSrc = trim($rightEmbed);
                   }
-              } elseif ($liseBranch && $liseBranch->map_embed_url) {
-                  $rightSrc = $liseBranch->map_embed_url;
+              } elseif ($homepageUnits->skip(1)->first() && $homepageUnits->skip(1)->first()->map_embed_url) {
+                  $rightSrc = $homepageUnits->skip(1)->first()->map_embed_url;
+              } elseif ($homepageUnits->first() && $homepageUnits->first()->map_embed_url) {
+                  $rightSrc = $homepageUnits->first()->map_embed_url;
               }
             @endphp
             @if($rightSrc)

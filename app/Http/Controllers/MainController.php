@@ -36,32 +36,10 @@ class MainController extends Controller
       $socialSettings = Setting::getByGroup('social') ?? [];
       $mapSettings = Setting::getByGroup('map') ?? [];
       
-      // Yerleşkeleri type'a göre ayır
-      $ilkogretimBranch = Branch::where(function($q) {
-          $q->where('type', 'ilkogretim')->orWhere('type', 'ilkokul');
-      })->first();
-      $liseBranch = Branch::where(function($q) {
-          $q->where('type', 'lise')->orWhere('type', 'fen-anadolu-lisesi');
-      })->first();
-
-      // Okul kademelerine göre branch'leri eşleştir (geriye dönük uyumluluk için)
-      $anaSinifiBranch = Branch::where('type', 'okul-oncesi')->orWhere('type', 'ana-sinifi')->first();
-      $ilkokulBranch = Branch::where('type', 'ilkokul')->first();
-      $ortaokulBranch = Branch::where('type', 'ortaokul')->first();
-      $anadoluLisesiBranch = Branch::where('type', 'anadolu-lisesi')->orWhere('type', 'lise')->first();
-      $fenLisesiBranch = Branch::where('type', 'fen-lisesi')->orWhere('type', 'fen-anadolu-lisesi')->first();
-
-      // Ana sayfa birimleri - type'a göre sıralı
-      $homepageUnits = Branch::whereIn('type', ['okul-oncesi', 'ilkokul', 'ortaokul', 'anadolu-lisesi', 'fen-lisesi'])
-          ->orderByRaw("CASE 
-              WHEN type = 'okul-oncesi' THEN 1
-              WHEN type = 'ilkokul' THEN 2
-              WHEN type = 'ortaokul' THEN 3
-              WHEN type = 'anadolu-lisesi' THEN 4
-              WHEN type = 'fen-lisesi' THEN 5
-              ELSE 6
-          END")
-          ->get();
+      // Tüm birimleri dinamik olarak çek (veritabanından)
+      // Ana sayfa birimleri - tamamen dinamik (veritabanındaki tüm birimler)
+      // Sıralama: order alanına göre, yoksa isme göre
+      $homepageUnits = Branch::orderBy('order', 'asc')->orderBy('name', 'asc')->get();
 
       // Hero slider slaytları
       $heroSliders = HeroSlider::active()->ordered()->get();
@@ -82,14 +60,7 @@ class MainController extends Controller
           'settings',
           'socialSettings',
           'mapSettings',
-          'ilkogretimBranch',
-          'liseBranch',
           'galleries',
-          'anaSinifiBranch',
-          'ilkokulBranch',
-          'ortaokulBranch',
-          'anadoluLisesiBranch',
-          'fenLisesiBranch',
           'homepageUnits',
           'heroSliders',
           'menus',

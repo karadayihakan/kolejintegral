@@ -24,6 +24,7 @@
                         <table id="branches-table" class="table table-striped table-hover" style="width: 100%;">
                             <thead class="table-light">
                                 <tr>
+                                    <th>Sıra</th>
                                     <th>ID</th>
                                     <th class="text-center">Görsel</th>
                                     <th>Adı</th>
@@ -83,6 +84,15 @@
                                     <label for="slug" class="form-label">Slug <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="slug" name="slug" required>
                                     <span class="text-danger small d-none" id="slug-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="mb-3">
+                                    <label for="order" class="form-label">Sıra</label>
+                                    <input type="number" class="form-control" id="order" name="order" min="0" value="0">
+                                    <small class="text-muted">Ana sayfada görünme sırası (küçük sayı önce görünür)</small>
+                                    <span class="text-danger small d-none" id="order-error"></span>
                                 </div>
                             </div>
 
@@ -166,6 +176,7 @@
                     url: '//cdn.datatables.net/plug-ins/1.11.5/i18n/tr.json'
                 },
                 columns: [
+                    { data: 'order', name: 'order', className: 'text-center' },
                     { data: 'id', name: 'id' },
                     { 
                         data: 'hero_image_preview', 
@@ -186,7 +197,7 @@
                         className: 'text-center'
                     },
                 ],
-                order: [[0, 'desc']]
+                order: [[0, 'desc'], [1, 'desc']]
             });
 
             function showAlert(message, type = 'success') {
@@ -235,6 +246,7 @@
                     $('#phone').val(data.phone || '');
                     $('#address').val(data.address || '');
                     $('#email').val(data.user ? data.user.email : '');
+                    $('#order').val(data.order ?? 0);
                     
                     // Logo önizleme
                     if (data.logo) {

@@ -18,8 +18,11 @@ class BranchController extends Controller
 
     public function getBranches()
     {
-        $branches = Branch::with('user')->get();
+        $branches = Branch::with('user')->orderBy('order', 'desc')->orderBy('id', 'desc')->get();
         return DataTables::of($branches)
+            ->addColumn('order', function($row){
+                return $row->order ?? 0;
+            })
             ->addColumn('hero_image_preview', function($row){
                 $defaultImages = [
                     'okul-oncesi' => 'images/okul-oncesi-hero.jpg',
@@ -58,7 +61,7 @@ class BranchController extends Controller
                 </button>';
                 return $editBtn . ' ' . $deleteBtn;
             })
-            ->rawColumns(['hero_image_preview', 'action'])
+            ->rawColumns(['hero_image_preview', 'action', 'order'])
             ->make(true);
     }
 
@@ -75,6 +78,7 @@ class BranchController extends Controller
             'slogan' => 'nullable|string|max:255',
             'address' => 'nullable|string|max:500',
             'phone' => 'nullable|string|max:20',
+            'order' => 'nullable|integer|min:0',
         ];
 
         $validated = $request->validate($rules);
@@ -158,6 +162,7 @@ class BranchController extends Controller
             'address' => $request->address,
             'slug' => $request->slug,
             'phone' => $request->phone,
+            'order' => $request->order ?? 0,
             'user_id' => $user->id,
         ];
 
