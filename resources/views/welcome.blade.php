@@ -1627,9 +1627,14 @@ $('a').click(function() {
         .popup-banner-content {
           max-width: 95%;
           width: 95%;
-          height: 95vh;
-          max-height: 95vh;
+          height: auto;
+          max-height: 90vh;
           border-radius: 10px;
+        }
+        
+        .popup-banner-image {
+          max-height: calc(90vh - 60px);
+          object-fit: contain;
         }
         
         .popup-banner-close {
@@ -1643,11 +1648,17 @@ $('a').click(function() {
       
       @media (max-width: 480px) {
         .popup-banner-content {
-          max-width: 100%;
-          width: 100%;
-          height: 100vh;
-          max-height: 100vh;
-          border-radius: 0;
+          max-width: 95%;
+          width: 95%;
+          height: auto;
+          max-height: 90vh;
+          border-radius: 10px;
+          margin: 20px auto;
+        }
+        
+        .popup-banner-image {
+          max-height: calc(90vh - 60px);
+          object-fit: contain;
         }
         
         .popup-banner-close {
