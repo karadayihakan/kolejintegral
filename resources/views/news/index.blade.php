@@ -161,9 +161,11 @@
             </a>
           @endforeach
         </div>
-        <div style="margin-top: 40px; display: flex; justify-content: center;">
-          {{ $news->links() }}
-        </div>
+        @if($news->hasPages())
+          <div style="margin-top: 40px; display: flex; justify-content: center; align-items: center; gap: 10px;">
+            {{ $news->links('pagination::bootstrap-4') }}
+          </div>
+        @endif
       @else
         <div style="text-align: center; color: white; padding: 40px;">
           <p style="font-size: 20px;">Henüz haber bulunmamaktadır.</p>
