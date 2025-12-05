@@ -1585,7 +1585,8 @@ $('a').click(function() {
       .popup-banner-content {
         position: relative;
         max-width: 90%;
-        width: 90%;
+        width: auto;
+        max-width: 1200px;
         height: 90vh;
         max-height: 90vh;
         background: white;
@@ -1627,6 +1628,17 @@ $('a').click(function() {
         object-fit: contain;
         display: block;
         flex: 1;
+        min-height: 0;
+      }
+      
+      /* Masaüstü için özel ayarlar */
+      @media (min-width: 769px) {
+        .popup-banner-content {
+          width: auto;
+          max-width: 1200px;
+          height: 90vh;
+          max-height: 90vh;
+        }
       }
       
       /* Mobil için responsive ayarlar */
