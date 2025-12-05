@@ -14,8 +14,8 @@ class SettingsSeeder extends Seeder
     public function run(): void
     {
         // İletişim Bilgileri
-        Setting::set('phone', '0(212) 571 71 55', 'phone', 'contact');
-        Setting::set('email', 'iletisim@integral.fizetmedya.com', 'email', 'contact');
+        Setting::set('phone', '444 3 742', 'phone', 'contact');
+        Setting::set('email', 'bilgi@kolejintegral.com', 'email', 'contact');
         
         // Sosyal Medya
         Setting::set('instagram', 'https://www.instagram.com/endeneyim', 'url', 'social');
