@@ -27,12 +27,14 @@ class DatabaseSeeder extends Seeder
         $this->call([
             SettingsSeeder::class,
             GallerySeeder::class,
+            NewsCategorySeeder::class,
             NewsSeeder::class,
             BranchSeeder::class,
             StaticPagesSeeder::class,
             AboutPageSectionsSeeder::class,
             MenuSeeder::class,
             PopupBannerSeeder::class,
+            MagazineSeeder::class,
         ]);
     }
 }
