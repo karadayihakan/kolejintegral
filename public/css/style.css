@@ -927,7 +927,7 @@ html {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
         margin: 30px auto 0 !important;
-        padding: 0 15px !important;
+        padding: 0 15px 40px 15px !important;
     }
     
     .classes .class-item {
@@ -944,6 +944,7 @@ html {
         gap: 50px;
         padding: 40px 20px;
         padding-top: 0;
+        padding-bottom: 40px;
     }
 }
 
@@ -964,11 +965,15 @@ html {
     
     .classes .class-items {
         gap: 12px !important;
-        padding: 0 10px !important;
+        padding: 0 10px 40px 10px !important;
     }
     
     .classes .class-item {
         min-height: 180px !important;
+    }
+    
+    .classes .container {
+        padding-bottom: 40px;
     }
 }
 
