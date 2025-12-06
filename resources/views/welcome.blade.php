@@ -534,6 +534,7 @@ body {
   </div>
 
   <style>
+    /* Masaüstü ayarları */
     .explore {
       padding: 20px 0;
     }
@@ -548,6 +549,8 @@ body {
     .swiper-explore .swiper-slide img {
       border-radius: 20px;
     }
+    
+    /* Mobil ayarları */
     @media (max-width: 768px) {
       .explore {
         padding: 20px 0;
