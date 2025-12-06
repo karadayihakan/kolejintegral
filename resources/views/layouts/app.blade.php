@@ -60,7 +60,7 @@
 
             <!-- Admin Footer -->
             <footer class="text-center text-muted py-3" style="font-size: 0.75rem; border-top: 1px solid #e5e7eb; margin-top: 1rem;">
-                Buberka CMS &copy; {{ date('Y') }}
+                <a href="https://buberka.com" target="_blank" style="color: inherit; text-decoration: none;">Buberka CMS</a> &copy; {{ date('Y') }}
             </footer>
         </div>
 
