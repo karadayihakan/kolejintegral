@@ -553,17 +553,30 @@ body {
         padding: 20px 0;
       }
       .explore .container {
-        padding: 0 15px;
+        padding: 0 30px;
       }
       .swiper-explore .swiper-slide {
-        border-radius: 12px;
-        padding: 0 5px;
+        border-radius: 8px;
+        padding: 0 8px;
       }
       .swiper-explore .swiper-slide img {
-        border-radius: 12px;
+        border-radius: 8px;
       }
       .swiper-pagination-explore {
         bottom: 10px !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .explore .container {
+        padding: 0 25px;
+      }
+      .swiper-explore .swiper-slide {
+        border-radius: 6px;
+        padding: 0 6px;
+      }
+      .swiper-explore .swiper-slide img {
+        border-radius: 6px;
       }
     }
   </style>
