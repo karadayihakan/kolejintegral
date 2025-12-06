@@ -19,16 +19,40 @@
     
     <style>
         .btn-primary {
-            background-color: #51223a !important;
-            border-color: #51223a !important;
+            background-color: #fd7a31 !important;
+            border-color: #fd7a31 !important;
         }
         .btn-primary:hover {
-            background-color: #6b2d4a !important;
-            border-color: #6b2d4a !important;
+            background-color: #fd7024 !important;
+            border-color: #fd7024 !important;
         }
         .btn-primary:focus, .btn-primary:active {
-            background-color: #51223a !important;
-            border-color: #51223a !important;
+            background-color: #fd7a31 !important;
+            border-color: #fd7a31 !important;
+        }
+        
+        /* Primary button component için */
+        button[type="submit"].inline-flex,
+        button.inline-flex.items-center {
+            background-color: #fd7a31 !important;
+            border-color: #fd7a31 !important;
+            color: white !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        button[type="submit"].inline-flex:hover,
+        button.inline-flex.items-center:hover {
+            background-color: #fd7024 !important;
+            border-color: #fd7024 !important;
+        }
+        
+        button[type="submit"].inline-flex:focus,
+        button[type="submit"].inline-flex:active,
+        button.inline-flex.items-center:focus,
+        button.inline-flex.items-center:active {
+            background-color: #fd7a31 !important;
+            border-color: #fd7a31 !important;
         }
     </style>
 

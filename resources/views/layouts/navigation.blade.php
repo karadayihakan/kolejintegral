@@ -1,4 +1,4 @@
-<nav style="background: white; border-bottom: 1px solid #e5e7eb; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
+<nav style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%); border-bottom: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
     <div class="container-fluid px-4">
         <div class="d-flex justify-content-between align-items-center" style="height: 64px;">
             <div class="d-flex align-items-center">
@@ -11,52 +11,52 @@
 
                 <!-- Navigation Links -->
                 <div class="d-none d-md-flex align-items-center" style="gap: 0.5rem;">
-                    <a href="{{ route('dashboard.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.index') ? 'active' : '' }}" style="padding: 0.6rem 1.1rem; text-decoration: none; color: #1f2937; font-weight: 550; font-size: 1.05rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
+                    <a href="{{ route('dashboard.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.index') ? 'active' : '' }}" style="padding: 0.6rem 1.1rem; text-decoration: none; color: #ffffff; font-weight: 550; font-size: 1.05rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
                         Panel
                         @if(request()->routeIs('dashboard.index'))
-                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #51223a; border-radius: 2px;"></span>
+                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #fd7a31; border-radius: 2px;"></span>
                         @endif
                     </a>
-                    <a href="{{ route('dashboard.news.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.news.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
+                    <a href="{{ route('dashboard.news.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.news.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #ffffff; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
                         Haberler
                         @if(request()->routeIs('dashboard.news.*'))
-                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #51223a; border-radius: 2px;"></span>
+                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #fd7a31; border-radius: 2px;"></span>
                         @endif
                     </a>
-                    <a href="{{ route('dashboard.news-categories.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.news-categories.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
+                    <a href="{{ route('dashboard.news-categories.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.news-categories.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #ffffff; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
                         Haber Kategorileri
                         @if(request()->routeIs('dashboard.news-categories.*'))
-                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #51223a; border-radius: 2px;"></span>
+                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #fd7a31; border-radius: 2px;"></span>
                         @endif
                     </a>
-                    <a href="{{ route('dashboard.pages.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.pages.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
+                    <a href="{{ route('dashboard.pages.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.pages.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #ffffff; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
                       Sayfalar
                       @if(request()->routeIs('dashboard.pages.*'))
                           <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #51223a; border-radius: 2px;"></span>
                       @endif
                     </a>
-                    <a href="{{ route('dashboard.gallery.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.gallery.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
+                    <a href="{{ route('dashboard.gallery.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.gallery.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #ffffff; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
                         Keşfet
                         @if(request()->routeIs('dashboard.gallery.*'))
-                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #51223a; border-radius: 2px;"></span>
+                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #fd7a31; border-radius: 2px;"></span>
                         @endif
                     </a>
-                    <a href="{{ route('dashboard.popup-banner.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.popup-banner.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
+                    <a href="{{ route('dashboard.popup-banner.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.popup-banner.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #ffffff; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
                         Popup Banner
                         @if(request()->routeIs('dashboard.popup-banner.*'))
-                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #51223a; border-radius: 2px;"></span>
+                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #fd7a31; border-radius: 2px;"></span>
                         @endif
                     </a>
-                    <a href="{{ route('dashboard.magazines.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.magazines.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
+                    <a href="{{ route('dashboard.magazines.index') }}" class="nav-link-custom {{ request()->routeIs('dashboard.magazines.*') ? 'active' : '' }}" style="padding: 0.5rem 1rem; text-decoration: none; color: #ffffff; font-weight: 500; font-size: 0.875rem; border-radius: 0.5rem; transition: all 0.2s; position: relative;">
                         Pikajintegral
                         @if(request()->routeIs('dashboard.magazines.*'))
-                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #51223a; border-radius: 2px;"></span>
+                            <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 2px; background: #fd7a31; border-radius: 2px;"></span>
                         @endif
                     </a>
                     <div class="dropdown">
                         <button class="nav-link-custom d-flex align-items-center gap-1 {{ request()->routeIs('dashboard.settings.*') || request()->routeIs('dashboard.branch.*') || request()->routeIs('dashboard.hero-sliders.*') || request()->routeIs('dashboard.menu.*') ? 'active' : '' }}"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                style="padding: 0.6rem 1.1rem; text-decoration: none; color: #1f2937; font-weight: 550; font-size: 1.05rem; border-radius: 0.5rem; transition: all 0.2s;">
+                                style="padding: 0.6rem 1.1rem; text-decoration: none; color: #ffffff; font-weight: 550; font-size: 1.05rem; border-radius: 0.5rem; transition: all 0.2s;">
                             Ayarlar
                             <svg style="width: 1rem; height: 1rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -75,14 +75,14 @@
             <!-- Settings Dropdown -->
             <div class="d-none d-sm-flex align-items-center">
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="background: transparent; border: none; color: #1f2937; font-weight: 500; padding: 0.5rem 1rem;">
+                    <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="background: transparent; border: none; color: #ffffff; font-weight: 500; padding: 0.5rem 1rem;">
                         <div class="me-2">
-                            <div style="width: 32px; height: 32px; background: linear-gradient(135deg, #51223a 0%, #6b2d4a 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 550; font-size: 0.875rem;">
+                            <div style="width: 32px; height: 32px; background: linear-gradient(135deg, #fd7a31 0%, #fd7024 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 550; font-size: 0.875rem;">
                                 {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
                             </div>
                         </div>
                         <span style="font-size: 0.875rem;">{{ Auth::user()->name }}</span>
-                        <svg style="width: 1rem; height: 1rem; margin-left: 0.5rem; color: #1f2937;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg style="width: 1rem; height: 1rem; margin-left: 0.5rem; color: #ffffff;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -118,7 +118,7 @@
 
             <!-- Hamburger -->
             <div class="d-flex d-md-none align-items-center">
-                <button type="button" id="mobileMenuToggle" style="background: transparent; border: none; color: #1f2937; padding: 0.5rem;" onclick="toggleMobileMenu()">
+                <button type="button" id="mobileMenuToggle" style="background: transparent; border: none; color: #ffffff; padding: 0.5rem;" onclick="toggleMobileMenu()">
                     <svg style="width: 1.5rem; height: 1.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -152,7 +152,7 @@
                 <a href="{{ route('dashboard.magazines.index') }}" class="mobile-nav-link {{ request()->routeIs('dashboard.magazines.*') ? 'active' : '' }}" style="padding: 0.75rem 1rem; text-decoration: none; color: #1f2937; font-weight: 500; border-radius: 0.5rem; transition: background 0.2s;" onmouseover="this.style.background='#f3f4f6';" onmouseout="this.style.background='transparent';">
                     Pikajintegral
                 </a>
-                <div style="padding: 0.5rem 0 0.25rem 0; font-weight: 700; color: #51223a; font-size: 0.85rem;">Ayarlar</div>
+                <div style="padding: 0.5rem 0 0.25rem 0; font-weight: 700; color: #fd7a31; font-size: 0.85rem;">Ayarlar</div>
                 <a href="{{ route('dashboard.branch.index') }}" class="mobile-nav-link {{ request()->routeIs('dashboard.branch.*') ? 'active' : '' }}" style="padding: 0.75rem 1.2rem; text-decoration: none; color: #1f2937; font-weight: 550; font-size: 1.05rem; border-radius: 0.5rem; transition: background 0.2s;" onmouseover="this.style.background='#f3f4f6';" onmouseout="this.style.background='transparent';">
                     Birimler
                 </a>
@@ -192,14 +192,14 @@
         font-size: 1.05rem !important;
     }
     .nav-link-custom:hover {
-        color: #51223a !important;
-        background: #f5eef2 !important;
+        color: #ffffff !important;
+        background: rgba(255, 255, 255, 0.15) !important;
         font-weight: 550 !important;
         font-size: 1.05rem !important;
     }
     .nav-link-custom.active {
-        color: #51223a !important;
-        background: #f5eef2 !important;
+        color: #ffffff !important;
+        background: rgba(255, 255, 255, 0.15) !important;
         font-weight: 550 !important;
         font-size: 1.05rem !important;
     }
@@ -208,8 +208,8 @@
         font-size: 1.05rem !important;
     }
     .mobile-nav-link.active {
-        background: #f5eef2 !important;
-        color: #51223a !important;
+        background: rgba(253, 122, 49, 0.2) !important;
+        color: #fd7a31 !important;
         font-weight: 550 !important;
         font-size: 1.05rem !important;
     }
