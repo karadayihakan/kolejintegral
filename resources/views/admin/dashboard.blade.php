@@ -18,7 +18,7 @@
             <div class="row g-4 mb-4">
                 <!-- Birim Kartı -->
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="stat-card" style="background: linear-gradient(135deg, #51223a 0%, #6b2d4a 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
+                    <div class="stat-card" style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
                         <div style="position: absolute; top: -1rem; right: -1rem; width: 6rem; height: 6rem; background: white; opacity: 0.1; border-radius: 50%;"></div>
                         <div style="position: absolute; bottom: -1rem; left: -1rem; width: 8rem; height: 8rem; background: white; opacity: 0.05; border-radius: 50%;"></div>
                         <div class="d-flex justify-content-between align-items-start" style="position: relative; z-index: 1;">
@@ -38,7 +38,7 @@
 
                 <!-- Pikajintegral Kartı -->
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="stat-card" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
+                    <div class="stat-card" style="background: linear-gradient(135deg, #fd7a31 0%, #fd7024 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
                         <div style="position: absolute; top: -1rem; right: -1rem; width: 6rem; height: 6rem; background: white; opacity: 0.1; border-radius: 50%;"></div>
                         <div style="position: absolute; bottom: -1rem; left: -1rem; width: 8rem; height: 8rem; background: white; opacity: 0.05; border-radius: 50%;"></div>
                         <div class="d-flex justify-content-between align-items-start" style="position: relative; z-index: 1;">
@@ -64,7 +64,7 @@
 
                 <!-- Haber Kartı -->
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="stat-card" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
+                    <div class="stat-card" style="background: linear-gradient(135deg, #c05e2e 0%, #bc541b 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
                         <div style="position: absolute; top: -1rem; right: -1rem; width: 6rem; height: 6rem; background: white; opacity: 0.1; border-radius: 50%;"></div>
                         <div style="position: absolute; bottom: -1rem; left: -1rem; width: 8rem; height: 8rem; background: white; opacity: 0.05; border-radius: 50%;"></div>
                         <div class="d-flex justify-content-between align-items-start" style="position: relative; z-index: 1;">
@@ -84,7 +84,7 @@
 
                 <!-- Sayfa Kartı -->
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="stat-card" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
+                    <div class="stat-card" style="background: linear-gradient(135deg, #fd7a31 0%, #c05e2e 100%); border-radius: 1rem; padding: 1.5rem; color: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';">
                         <div style="position: absolute; top: -1rem; right: -1rem; width: 6rem; height: 6rem; background: white; opacity: 0.1; border-radius: 50%;"></div>
                         <div style="position: absolute; bottom: -1rem; left: -1rem; width: 8rem; height: 8rem; background: white; opacity: 0.05; border-radius: 50%;"></div>
                         <div class="d-flex justify-content-between align-items-start" style="position: relative; z-index: 1;">
@@ -113,17 +113,17 @@
                 </h3>
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-3">
-                        <a href="{{ route('dashboard.branch.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#c9a5b3'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
+                        <a href="{{ route('dashboard.branch.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#fd7a31'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="quick-icon" style="background: #dbeafe; border-radius: 0.5rem; padding: 0.75rem; transition: background 0.3s;">
-                                    <svg style="width: 1.5rem; height: 1.5rem; color: #2563eb;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="quick-icon" style="background: #fed7aa; border-radius: 0.5rem; padding: 0.75rem; transition: background 0.3s;">
+                                    <svg style="width: 1.5rem; height: 1.5rem; color: #fd7a31;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                     </svg>
                                 </div>
                             </div>
                             <h4 class="mb-1 fw-semibold" style="color: #111827; font-size: 1rem;">Birimleri Yönet</h4>
                             <p class="mb-0" style="font-size: 0.875rem; color: #6b7280;">Birim ekle, düzenle veya sil</p>
-                            <div class="mt-3 d-flex align-items-center" style="color: #2563eb; opacity: 0; transition: opacity 0.3s;">
+                            <div class="mt-3 d-flex align-items-center" style="color: #fd7a31; opacity: 0; transition: opacity 0.3s;">
                                 <span style="font-size: 0.875rem; font-weight: 500;">Git</span>
                                 <svg style="width: 1rem; height: 1rem; margin-left: 0.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -133,17 +133,17 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3">
-                        <a href="{{ route('dashboard.news.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#c4b5fd'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
+                        <a href="{{ route('dashboard.news.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#fd7a31'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="quick-icon" style="background: #f3e8ff; border-radius: 0.5rem; padding: 0.75rem; transition: background 0.3s;">
-                                    <svg style="width: 1.5rem; height: 1.5rem; color: #7c3aed;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="quick-icon" style="background: #fed7aa; border-radius: 0.5rem; padding: 0.75rem; transition: background 0.3s;">
+                                    <svg style="width: 1.5rem; height: 1.5rem; color: #fd7a31;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                                     </svg>
                                 </div>
                             </div>
                             <h4 class="mb-1 fw-semibold" style="color: #111827; font-size: 1rem;">Haberleri Yönet</h4>
                             <p class="mb-0" style="font-size: 0.875rem; color: #6b7280;">Haber ekle, düzenle veya sil</p>
-                            <div class="mt-3 d-flex align-items-center" style="color: #7c3aed; opacity: 0; transition: opacity 0.3s;">
+                            <div class="mt-3 d-flex align-items-center" style="color: #fd7a31; opacity: 0; transition: opacity 0.3s;">
                                 <span style="font-size: 0.875rem; font-weight: 500;">Git</span>
                                 <svg style="width: 1rem; height: 1rem; margin-left: 0.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -153,17 +153,17 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3">
-                        <a href="{{ route('dashboard.pages.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#fdba74'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
+                        <a href="{{ route('dashboard.pages.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#fd7a31'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="quick-icon" style="background: #fed7aa; border-radius: 0.5rem; padding: 0.75rem; transition: background 0.3s;">
-                                    <svg style="width: 1.5rem; height: 1.5rem; color: #ea580c;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg style="width: 1.5rem; height: 1.5rem; color: #fd7a31;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                     </svg>
                                 </div>
                             </div>
                             <h4 class="mb-1 fw-semibold" style="color: #111827; font-size: 1rem;">Sayfaları Yönet</h4>
                             <p class="mb-0" style="font-size: 0.875rem; color: #6b7280;">Sayfa ekle, düzenle veya sil</p>
-                            <div class="mt-3 d-flex align-items-center" style="color: #ea580c; opacity: 0; transition: opacity 0.3s;">
+                            <div class="mt-3 d-flex align-items-center" style="color: #fd7a31; opacity: 0; transition: opacity 0.3s;">
                                 <span style="font-size: 0.875rem; font-weight: 500;">Git</span>
                                 <svg style="width: 1rem; height: 1rem; margin-left: 0.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -173,17 +173,17 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3">
-                        <a href="{{ route('dashboard.settings.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#86efac'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
+                        <a href="{{ route('dashboard.settings.index') }}" class="quick-access-card" style="display: block; background: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#fd7a31'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="quick-icon" style="background: #d1fae5; border-radius: 0.5rem; padding: 0.75rem; transition: background 0.3s;">
-                                    <svg style="width: 1.5rem; height: 1.5rem; color: #059669;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="quick-icon" style="background: #fed7aa; border-radius: 0.5rem; padding: 0.75rem; transition: background 0.3s;">
+                                    <svg style="width: 1.5rem; height: 1.5rem; color: #fd7a31;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                                     </svg>
                                 </div>
                             </div>
                             <h4 class="mb-1 fw-semibold" style="color: #111827; font-size: 1rem;">Site Ayarları</h4>
                             <p class="mb-0" style="font-size: 0.875rem; color: #6b7280;">Telefon, sosyal medya ve adresler</p>
-                            <div class="mt-3 d-flex align-items-center" style="color: #059669; opacity: 0; transition: opacity 0.3s;">
+                            <div class="mt-3 d-flex align-items-center" style="color: #fd7a31; opacity: 0; transition: opacity 0.3s;">
                                 <span style="font-size: 0.875rem; font-weight: 500;">Git</span>
                                 <svg style="width: 1rem; height: 1rem; margin-left: 0.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -199,7 +199,7 @@
                 <!-- Son Birimler -->
                 <div class="col-12 col-lg-6">
                     <div class="card" style="border: 1px solid #e5e7eb; border-radius: 0.75rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); overflow: hidden;">
-                        <div style="background: linear-gradient(135deg, #51223a 0%, #6b2d4a 100%); padding: 1rem 1.5rem;">
+                        <div style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%); padding: 1rem 1.5rem;">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3 class="mb-0 fw-bold text-white" style="font-size: 1.125rem;">
                                     <svg style="width: 1.25rem; height: 1.25rem; display: inline-block; vertical-align: middle; margin-right: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -213,10 +213,10 @@
                         <div class="card-body" style="padding: 1.5rem;">
                             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                                 @forelse($stats['recent_branches'] as $branch)
-                                    <div class="d-flex align-items-center justify-content-between p-3" style="background: #f9fafb; border-radius: 0.5rem; border: 1px solid transparent; transition: all 0.2s;" onmouseover="this.style.background='#eff6ff'; this.style.borderColor='#bfdbfe';" onmouseout="this.style.background='#f9fafb'; this.style.borderColor='transparent';">
+                                    <div class="d-flex align-items-center justify-content-between p-3" style="background: #f9fafb; border-radius: 0.5rem; border: 1px solid transparent; transition: all 0.2s;" onmouseover="this.style.background='#fff7ed'; this.style.borderColor='#fed7aa';" onmouseout="this.style.background='#f9fafb'; this.style.borderColor='transparent';">
                                         <div class="d-flex align-items-center" style="flex: 1; min-width: 0;">
-                                            <div style="background: #dbeafe; border-radius: 0.5rem; padding: 0.5rem; margin-right: 0.75rem;">
-                                                <svg style="width: 1.25rem; height: 1.25rem; color: #2563eb;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <div style="background: #fed7aa; border-radius: 0.5rem; padding: 0.5rem; margin-right: 0.75rem;">
+                                                <svg style="width: 1.25rem; height: 1.25rem; color: #fd7a31;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                                 </svg>
                                             </div>
@@ -243,7 +243,7 @@
                 <!-- Son Haberler -->
                 <div class="col-12 col-lg-6">
                     <div class="card" style="border: 1px solid #e5e7eb; border-radius: 0.75rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); overflow: hidden;">
-                        <div style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); padding: 1rem 1.5rem;">
+                        <div style="background: linear-gradient(135deg, #fd7a31 0%, #fd7024 100%); padding: 1rem 1.5rem;">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3 class="mb-0 fw-bold text-white" style="font-size: 1.125rem;">
                                     <svg style="width: 1.25rem; height: 1.25rem; display: inline-block; vertical-align: middle; margin-right: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -257,10 +257,10 @@
                         <div class="card-body" style="padding: 1.5rem;">
                             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                                 @forelse($stats['recent_news'] as $news)
-                                    <div class="d-flex align-items-center justify-content-between p-3" style="background: #f9fafb; border-radius: 0.5rem; border: 1px solid transparent; transition: all 0.2s;" onmouseover="this.style.background='#faf5ff'; this.style.borderColor='#e9d5ff';" onmouseout="this.style.background='#f9fafb'; this.style.borderColor='transparent';">
+                                    <div class="d-flex align-items-center justify-content-between p-3" style="background: #f9fafb; border-radius: 0.5rem; border: 1px solid transparent; transition: all 0.2s;" onmouseover="this.style.background='#fff7ed'; this.style.borderColor='#fed7aa';" onmouseout="this.style.background='#f9fafb'; this.style.borderColor='transparent';">
                                         <div class="d-flex align-items-center" style="flex: 1; min-width: 0;">
-                                            <div style="background: #f3e8ff; border-radius: 0.5rem; padding: 0.5rem; margin-right: 0.75rem;">
-                                                <svg style="width: 1.25rem; height: 1.25rem; color: #7c3aed;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <div style="background: #fed7aa; border-radius: 0.5rem; padding: 0.5rem; margin-right: 0.75rem;">
+                                                <svg style="width: 1.25rem; height: 1.25rem; color: #fd7a31;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                                                 </svg>
                                             </div>
@@ -291,7 +291,7 @@
 
     <style>
         .quick-access-card:hover .quick-icon {
-            background: #51223a !important;
+            background: #fd7a31 !important;
         }
         .quick-access-card:hover .quick-icon svg {
             color: white !important;
@@ -300,14 +300,10 @@
             opacity: 1 !important;
         }
         
-        .quick-access-card:nth-child(2):hover .quick-icon {
-            background: #8b5cf6 !important;
-        }
-        .quick-access-card:nth-child(3):hover .quick-icon {
-            background: #f97316 !important;
-        }
+        .quick-access-card:nth-child(2):hover .quick-icon,
+        .quick-access-card:nth-child(3):hover .quick-icon,
         .quick-access-card:nth-child(4):hover .quick-icon {
-            background: #10b981 !important;
+            background: #fd7a31 !important;
         }
     </style>
 </x-app-layout>
