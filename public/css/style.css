@@ -1243,6 +1243,22 @@ html {
     transform: translateY(0);
 }
 
+/* Modern ok ikonu - SVG arrow */
+#backToTop::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V5M5 12l7-7 7 7'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+#backToTop {
+    font-size: 0;
+}
+
 .footer-copyright {
     background-color: #0d1331;
     text-align: center;

@@ -29,9 +29,7 @@
     </div>
   </div>
   <!-- Back to top arrow -->
-  <button id="backToTop" aria-label="Yukarı dön">
-    ↑
-  </button>
+  <button id="backToTop" aria-label="Yukarı dön"></button>
 </footer>
 
 <script>
