@@ -19,7 +19,7 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center px-4 py-10"
-             style="background: radial-gradient(circle at top, #8B4789 0, #6B2A6B 45%, #2B1238 100%);">
+             style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%);">
             <div class="mb-4">
                 <a href="/">
                     <img src="/images/integral-logo.png" alt="Kolej İntegral" class="w-24 h-24 object-contain drop-shadow-lg">
