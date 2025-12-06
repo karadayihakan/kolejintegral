@@ -75,7 +75,7 @@
       }
       .swiper-explore .swiper-slide {
         border-radius: 8px !important;
-        padding: 0 8px !important;
+        padding: 0 !important;
         border: 2px solid #f59e0b !important;
       }
       .swiper-explore .swiper-slide img {
@@ -92,7 +92,7 @@
       }
       .swiper-explore .swiper-slide {
         border-radius: 6px !important;
-        padding: 0 6px !important;
+        padding: 0 !important;
         border: 2px solid #f59e0b !important;
       }
       .swiper-explore .swiper-slide img {
