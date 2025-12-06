@@ -164,7 +164,7 @@
           {!! $news->content !!}
         </div>
         <div style="text-align: center; margin-top: 40px;">
-          <a href="{{ route('news.index') }}" class="tum-haberler-btn" style="background-color: #51223a; color: white; padding: 15px 40px; border-radius: 45px; text-decoration: none; font-weight: bold; display: inline-block; margin-right: 20px; position: relative;">Tüm Haberler</a>
+          <a href="{{ route('news.index') }}" class="tum-haberler-btn" style="background-color: #fd7a31; color: white; padding: 15px 40px; border-radius: 45px; text-decoration: none; font-weight: bold; display: inline-block; margin-right: 20px; position: relative;">Tüm Haberler</a>
           <a href="{{ route('home') }}" class="anasayfaya-don-btn" style="background-color: #51223a; color: white; padding: 15px 40px; border-radius: 45px; text-decoration: none; font-weight: bold; display: inline-block; position: relative;">Ana Sayfaya Dön</a>
         </div>
       </div>
