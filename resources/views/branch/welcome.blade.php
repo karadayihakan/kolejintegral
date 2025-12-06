@@ -22,9 +22,15 @@
     }
 
     .girisbuton {
-      background-color: #51223a;
+      background-color: #fd7a31;
       padding: 10px 20px;
       border-radius: 25px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .girisbuton:hover {
+      background-color: #fd7a31;
+      opacity: 0.9;
     }
 
     /* Mikro site menü - ana site ile aynı yapı */
@@ -55,6 +61,43 @@
       word-wrap: break-word;
       line-height: 1.2;
       max-width: 180px;
+    }
+
+    /* Keşfet pagination dot rengi */
+    .explore .swiper-pagination-explore .swiper-pagination-bullet-active {
+      background-color: #f8931f !important;
+    }
+
+    /* Mobilde Keşfet bölümü iyileştirmeleri */
+    @media (max-width: 768px) {
+      .explore .container {
+        padding: 0 30px !important;
+      }
+      .swiper-explore .swiper-slide {
+        border-radius: 8px !important;
+        padding: 0 8px !important;
+        border: 2px solid #f59e0b !important;
+      }
+      .swiper-explore .swiper-slide img {
+        border-radius: 8px !important;
+      }
+      .swiper-pagination-explore {
+        bottom: 10px !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .explore .container {
+        padding: 0 25px !important;
+      }
+      .swiper-explore .swiper-slide {
+        border-radius: 6px !important;
+        padding: 0 6px !important;
+        border: 2px solid #f59e0b !important;
+      }
+      .swiper-explore .swiper-slide img {
+        border-radius: 6px !important;
+      }
     }
   </style>
 </head>
@@ -283,9 +326,9 @@
     <div class="shadow"></div>
   </div>
   
-  <div class="haberler-section" id="haberler" style="width: 100%; min-height: 60vh; display: flex; justify-content: center; background-color: #51223a; position: relative; padding: 80px 0; margin-top: 0;">
+  <div class="haberler-section" id="haberler" style="width: 100%; min-height: 60vh; display: flex; justify-content: center; background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%); position: relative; padding: 80px 0; margin-top: 0;">
     <div class="container">
-      <h2 style="color: #f8931f; font-size: 42px; font-weight: bold; text-align: center; margin-bottom: 40px;">Haberler</h2>
+      <h2 style="color: #ffffff; font-size: 42px; font-weight: bold; text-align: center; margin-bottom: 40px;">Haberler</h2>
       @if($news->count() > 0)
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto;">
           @foreach($news as $item)
@@ -317,9 +360,7 @@
           @endforeach
         </div>
         <div style="text-align:center; margin-top:40px;">
-          <a href="{{ route('branch.news.index', $branch->slug) }}" style="display:inline-block; padding:12px 24px; border-radius:999px; background:#f8931f; color:#fff; text-decoration:none; font-weight:600;">
-            Tüm Haberler
-          </a>
+          <a href="{{ route('branch.news.index', $branch->slug) }}" class="tumunu-gor-btn" style="color: white; padding: 15px 40px; border-radius: 45px; text-decoration: none; font-weight: bold; display: inline-block; cursor: pointer;">Tüm Haberler</a>
         </div>
       @else
         <p style="color: #e5e7eb; text-align: center;">Bu birim için henüz haber eklenmemiş.</p>
@@ -405,6 +446,11 @@
       slidesPerView: 1,
       spaceBetween: 10,
       centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination-explore',
+        clickable: true,
+        dynamicBullets: true,
+      },
       breakpoints: {
         1200: { slidesPerView: 2, spaceBetween: 80 },
         1600: { slidesPerView: 2, spaceBetween: 100 },
