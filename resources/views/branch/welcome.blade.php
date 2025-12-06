@@ -29,8 +29,12 @@
     }
 
     .girisbuton:hover {
-      background-color: #fd7a31;
-      opacity: 0.9;
+      background-color: #fd7024;
+      opacity: 1;
+    }
+    
+    .girisbuton:hover a {
+      color: #ffffff !important;
     }
 
     /* Mikro site menü - ana site ile aynı yapı */

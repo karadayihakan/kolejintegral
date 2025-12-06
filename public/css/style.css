@@ -1629,26 +1629,34 @@ a.top-nav-left__item {
 }
 
 .nav.scrolled .girisbuton:hover {
-    background-color: #fd7a31;
-    opacity: 0.9;
+  background-color: #fd7024;
+  opacity: 1;
+}
+
+.nav.scrolled .girisbuton:hover a {
+  color: #ffffff !important;
+}
+
+.girisbuton:hover a {
+  color: #ffffff !important;
 }
 
 /* Menü Hover - Ana Site */
 .nav-items a:hover {
-    color: #51223a;
+    color: #fd7a31;
 }
 
 .nav-item:hover .line {
-    background-color: #51223a;
+    background-color: #fd7a31;
 }
 
 /* Sticky Menu Hover */
 .nav.scrolled .nav-items a:hover {
-    color: #f8931f;
+    color: #fd7a31;
 }
 
 .nav.scrolled .nav-item:hover .line {
-    background-color: #f8931f;
+    background-color: #fd7a31;
 }
 
 /* Fixed Page Menu Hover */
