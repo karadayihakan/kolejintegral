@@ -408,7 +408,7 @@ html {
 
 /* Header::before kaldırıldı - gradient artık slide::after içinde */
 
-/* Gradient overlay'i slide içine taşıyoruz - Turuncudan Mürdüme geçiş */
+/* Gradient overlay'i slide içine taşıyoruz - Üstte Mürdüm, Altta Turuncu */
 .header .swiper-slide::after {
     content: '';
     position: absolute;
@@ -416,7 +416,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #bc541b 0%, rgba(81, 34, 58, 0.3) 30%, rgba(81, 34, 58, 0.6) 60%, rgba(81, 34, 58, 0.9) 85%, #51223a 100%);
+    background: linear-gradient(180deg, #51223a 0%, rgba(81, 34, 58, 0.9) 15%, rgba(192, 94, 46, 0.6) 40%, rgba(188, 84, 27, 0.3) 70%, #bc541b 100%);
     z-index: 1;
     pointer-events: none;
 }
@@ -498,7 +498,7 @@ html {
     position: relative;
 }
 
-/* Gradient overlay her slide'ın içinde - görselin üstünde ama içeriğin altında - Turuncudan Mürdüme geçiş */
+/* Gradient overlay her slide'ın içinde - görselin üstünde ama içeriğin altında - Üstte Mürdüm, Altta Turuncu */
 .header .swiper-slide::after {
     content: '';
     position: absolute;
@@ -506,7 +506,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #bc541b 0%, rgba(81, 34, 58, 0.3) 30%, rgba(81, 34, 58, 0.6) 60%, rgba(81, 34, 58, 0.9) 85%, #51223a 100%);
+    background: linear-gradient(180deg, #51223a 0%, rgba(81, 34, 58, 0.9) 15%, rgba(192, 94, 46, 0.6) 40%, rgba(188, 84, 27, 0.3) 70%, #bc541b 100%);
     z-index: 1;
     pointer-events: none;
 }
@@ -529,7 +529,7 @@ html {
 }
 
 .header .swiper-pagination-bullet-active {
-    background-color: #bc541b;
+    background-color: #fd7a31;
 }
 
 .header .swiper-slide {
@@ -576,17 +576,17 @@ html {
     padding-left: 60px;
     text-decoration: none;
     border-radius: 45px;
-    background-color: #51223a;
+    background-color: #fd7a31;
     margin-top: 30px;
     transition: 0.3s ease;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(253, 122, 49, 0.3);
 }
 
 .header .swiper-slide a:hover {
-    background-color: #f8931f;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #fd7024;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
 }
 
 .header.malatya a {
@@ -645,12 +645,16 @@ html {
 .mouse {
     width: 100%;
     height: 40vh;
-    background-color: #51223a;
+    background-color: #bd5923;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.mouse .shadow {
+    display: none;
 }
 
 .mouse * {
@@ -1099,7 +1103,7 @@ html {
 
 .footer {
     color: white;
-    background-color: #51223a;
+    background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%);
     padding-top: 50px;
     padding-bottom: 30px;
 }
@@ -1137,7 +1141,7 @@ html {
 }
 
 .footer-social-icons a:hover i {
-    color: #ffa64d !important;
+    color: #f8931f !important;
     transform: scale(1.15) !important;
 }
 
@@ -1523,11 +1527,12 @@ html {
 
 /* Tümünü Gör Butonu */
 .tumunu-gor-btn {
-    background-color: #51223a;
+    background-color: #fd7a31 !important;
 }
 
 .tumunu-gor-btn:hover {
-    background-color: #f8931f !important;
+    background-color: #fd7a31 !important;
+    opacity: 0.9;
 }
 
 /* Birimler Kartları */
@@ -1584,11 +1589,12 @@ html {
 
 /* Sticky Menu */
 .nav.scrolled .girisbuton {
-    background-color: #f8931f;
+    background-color: #fd7a31;
 }
 
 .nav.scrolled .girisbuton:hover {
-    background-color: #51223a;
+    background-color: #fd7a31;
+    opacity: 0.9;
 }
 
 /* Menü Hover - Ana Site */
@@ -1643,7 +1649,7 @@ html {
 
 /* Mouse Icon */
 .mouse svg path {
-    stroke: #f8931f;
+    stroke: #ffffff;
 }
 
 /* Birimler Kart Arka Plan */

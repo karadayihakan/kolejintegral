@@ -1,0 +1,19 @@
+#!/usr/bin/expect -f
+set timeout 300
+spawn ssh -p 65002 u565201393@145.223.39.216
+expect "password:"
+send "K*QE9U6hxib3.TK\r"
+expect "$ "
+send "cd /home/u565201393/domains/fizetmedya.com/public_html/integral2\r"
+expect "$ "
+send "ls -la public/storage/popup-banners/ 2>&1 | head -5\r"
+expect "$ "
+send "test -f public/storage/popup-banners/87R5iw24s0MaSnV5qmiMOinIhufyR0pQPv4rcUEA.jpg && echo 'Popup image exists' || echo 'Popup image NOT found'\r"
+expect "$ "
+send "ls -la storage/app/public/popup-banners/ | head -5\r"
+expect "$ "
+send "echo 'Storage verification completed'\r"
+expect "$ "
+send "exit\r"
+expect eof
+

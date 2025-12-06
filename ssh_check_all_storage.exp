@@ -1,0 +1,29 @@
+#!/usr/bin/expect -f
+set timeout 300
+spawn ssh -p 65002 u565201393@145.223.39.216
+expect "password:"
+send "K*QE9U6hxib3.TK\r"
+expect "$ "
+send "cd /home/u565201393/domains/fizetmedya.com/public_html/integral2\r"
+expect "$ "
+send "echo '=== Storage Klasörleri ==='\r"
+expect "$ "
+send "ls -d storage/app/public/*/ 2>&1 | head -10\r"
+expect "$ "
+send "echo '=== Popup Banners ==='\r"
+expect "$ "
+send "ls storage/app/public/popup-banners/ 2>&1 | grep -v '^\.'\r"
+expect "$ "
+send "echo '=== Heroes ==='\r"
+expect "$ "
+send "ls storage/app/public/heroes/ 2>&1 | head -5 | grep -v '^\.'\r"
+expect "$ "
+send "echo '=== Images ==='\r"
+expect "$ "
+send "ls storage/app/public/images/ 2>&1 | head -5 | grep -v '^\.'\r"
+expect "$ "
+send "echo 'Storage check completed'\r"
+expect "$ "
+send "exit\r"
+expect eof
+

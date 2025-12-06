@@ -1,0 +1,16 @@
+#!/usr/bin/expect -f
+set timeout 300
+spawn ssh -p 65002 u565201393@145.223.39.216
+expect "password:"
+send "K*QE9U6hxib3.TK\r"
+expect "$ "
+send "cd /home/u565201393/domains/fizetmedya.com/public_html/integral2\r"
+expect "$ "
+send "git pull origin main\r"
+expect "$ "
+send "php artisan view:clear\r"
+expect "$ "
+send "echo 'Keşfet inline style kaldırıldı'\r"
+expect "$ "
+send "exit\r"
+expect eof

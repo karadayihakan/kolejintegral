@@ -11,7 +11,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v={{ time() }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-wcXyhpXmuFjd5MuV8F5N+G/5uM0KtWbGu+P5Lk2a0X4BHD2dCDGZuAo3l4YVNFxdQ8qIl3TCzrfA3MHZBAL2Kw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
 body {
@@ -26,7 +26,7 @@ body {
 }
 
 .girisbuton {
-  background-color: #51223a;
+  background-color: #fd7a31;
   padding: 10px 20px 10px 20px;
   border-radius: 25px;
   transition: background-color 0.2s ease-in-out;
@@ -37,7 +37,8 @@ body {
 }
 
 .girisbuton:hover {
-  background-color: #f59e0b;
+  background-color: #fd7a31;
+  opacity: 0.9;
 }
 </style>
 
@@ -362,7 +363,6 @@ body {
     </svg>
     <p class="mouse-bold">Kolej İntegral'i keşfetmek için</p>  
     <p class="mouse-thin">kaydırın</p>    
-    <div class="shadow"></div>
   </section>
 
   <div class="about-us" id="about-us" style="display: none;">
@@ -694,7 +694,7 @@ body {
                   <p style="color: #666; font-size: 16px; line-height: 1.6; flex: 1;">
                     {{ Str::limit(strip_tags($item->content), 120) }}
                   </p>
-                  <span style="color: #f8931f; text-decoration: none; font-weight: bold; margin-top: auto; display: inline-block; font-size: 14px; margin-top: 20px;">Devamını Oku →</span>
+                  <span style="color: #fd7a31; text-decoration: none; font-weight: bold; margin-top: auto; display: inline-block; font-size: 14px; margin-top: 20px;">Devamını Oku →</span>
    </div>
               </div>
             </a>
@@ -1092,7 +1092,7 @@ body {
                             {{ Str::limit(strip_tags($item->content), 200) }}
                           </p>
                         </div>
-                        <span style="color: #f8931f; text-decoration: none; font-weight: bold; margin-top: 15px; display: inline-block; align-self: flex-start; font-size: 14px;">Devamını Oku →</span>
+                        <span style="color: #fd7a31; text-decoration: none; font-weight: bold; margin-top: 15px; display: inline-block; align-self: flex-start; font-size: 14px;">Devamını Oku →</span>
                       </div>
                     </div>
                   </a>

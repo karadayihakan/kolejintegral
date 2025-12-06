@@ -1,0 +1,19 @@
+#!/usr/bin/expect -f
+set timeout 300
+spawn ssh -p 65002 u565201393@145.223.39.216
+expect "password:"
+send "K*QE9U6hxib3.TK\r"
+expect "$ "
+send "cd /home/u565201393/domains/fizetmedya.com/public_html/integral2\r"
+expect "$ "
+send "ls -la public/storage 2>&1\r"
+expect "$ "
+send "if [ ! -L public/storage ]; then ln -sf ../storage/app/public public/storage && echo 'Symlink created'; else echo 'Symlink already exists'; fi\r"
+expect "$ "
+send "ls -la public/storage/popup-banners/ | head -3\r"
+expect "$ "
+send "echo 'Storage symlink check completed'\r"
+expect "$ "
+send "exit\r"
+expect eof
+

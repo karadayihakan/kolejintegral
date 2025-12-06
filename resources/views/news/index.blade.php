@@ -6,7 +6,7 @@
   <title>Haberler | Kolej İntegral</title>
   <link rel="icon" type="image/png" href="/images/integral-logo.png">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v={{ time() }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-wcXyhpXmuFjd5MuV8F5N+G/5uM0KtWbGu+P5Lk2a0X4BHD2dCDGZuAo3l4YVNFxdQ8qIl3TCzrfA3MHZBAL2Kw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>

@@ -6,7 +6,7 @@
   <title>{{ $page->title }} | Kolej İntegral</title>
   <link rel="icon" type="image/png" href="/images/integral-logo.png">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v={{ time() }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
