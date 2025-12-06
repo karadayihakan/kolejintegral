@@ -1762,33 +1762,65 @@ $('a').click(function() {
     </div>
 
     <script>
+      // Cookie işlemleri için yardımcı fonksiyonlar
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
+
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      }
+
       document.addEventListener('DOMContentLoaded', function() {
         var popupModal = document.getElementById('popupBannerModal');
         var closeBtn = document.querySelector('.popup-banner-close');
         
-        // Sayfa yüklendiğinde popup'ı göster
-        setTimeout(function() {
-          popupModal.style.display = 'flex';
-        }, 500);
+        // Cookie kontrolü - eğer popup daha önce kapatıldıysa gösterme
+        var popupClosed = getCookie('popupBannerClosed');
+        
+        if (!popupClosed) {
+          // Sayfa yüklendiğinde popup'ı göster (sadece cookie yoksa)
+          setTimeout(function() {
+            popupModal.style.display = 'flex';
+          }, 500);
+        }
+
+        // Popup'ı kapatma fonksiyonu
+        function closePopup() {
+          popupModal.style.display = 'none';
+          // 24 saat (1 gün) için cookie set et
+          setCookie('popupBannerClosed', 'true', 1);
+        }
 
         // Kapat butonuna tıklandığında
         if (closeBtn) {
-          closeBtn.addEventListener('click', function() {
-            popupModal.style.display = 'none';
-          });
+          closeBtn.addEventListener('click', closePopup);
         }
 
         // Overlay'e tıklandığında kapat
         popupModal.addEventListener('click', function(e) {
           if (e.target === popupModal) {
-            popupModal.style.display = 'none';
+            closePopup();
           }
         });
 
         // ESC tuşu ile kapat
         document.addEventListener('keydown', function(e) {
           if (e.key === 'Escape' && popupModal.style.display === 'flex') {
-            popupModal.style.display = 'none';
+            closePopup();
           }
         });
       });
