@@ -250,10 +250,14 @@ html {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: white !important;
 }
 
-.top-nav-left__item * {
-    color: white;
+.top-nav-left__item,
+.top-nav-left__item *,
+.top-nav-left__item a,
+a.top-nav-left__item {
+    color: white !important;
 }
 
 .top-nav-right {
