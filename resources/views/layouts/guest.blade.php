@@ -22,7 +22,7 @@
              style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%) !important;">
             <div class="mb-4">
                 <a href="/">
-                    <img src="/images/integral-logo.png" alt="Kolej İntegral" class="w-24 h-24 object-contain drop-shadow-lg">
+                    <img src="/images/integral-logo.png" alt="Kolej İntegral" class="w-16 h-16 object-contain drop-shadow-lg">
                 </a>
             </div>
 
