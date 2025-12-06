@@ -1720,7 +1720,7 @@ $('a').click(function() {
         }
       }
     </style>
-    <div id="popupBannerModal" class="popup-banner-overlay">
+    <div id="popupBannerModal" class="popup-banner-overlay" data-popup-id="{{ $popupBanner->id }}">
       <div class="popup-banner-content">
         <button class="popup-banner-close">
           ×
@@ -1788,11 +1788,15 @@ $('a').click(function() {
         var popupModal = document.getElementById('popupBannerModal');
         var closeBtn = document.querySelector('.popup-banner-close');
         
-        // Cookie kontrolü - eğer popup daha önce kapatıldıysa gösterme
-        var popupClosed = getCookie('popupBannerClosed');
+        // Popup ID'sini al
+        var currentPopupId = popupModal.getAttribute('data-popup-id');
         
-        if (!popupClosed) {
-          // Sayfa yüklendiğinde popup'ı göster (sadece cookie yoksa)
+        // Cookie kontrolü - eğer bu popup daha önce kapatıldıysa gösterme
+        var closedPopupId = getCookie('popupBannerClosedId');
+        
+        // Eğer cookie yoksa veya farklı bir popup ID'si varsa göster
+        if (!closedPopupId || closedPopupId !== currentPopupId) {
+          // Sayfa yüklendiğinde popup'ı göster
           setTimeout(function() {
             popupModal.style.display = 'flex';
           }, 500);
@@ -1801,8 +1805,8 @@ $('a').click(function() {
         // Popup'ı kapatma fonksiyonu
         function closePopup() {
           popupModal.style.display = 'none';
-          // 24 saat (1 gün) için cookie set et
-          setCookie('popupBannerClosed', 'true', 1);
+          // 24 saat (1 gün) için bu popup'ın ID'sini cookie'ye kaydet
+          setCookie('popupBannerClosedId', currentPopupId, 1);
         }
 
         // Kapat butonuna tıklandığında
