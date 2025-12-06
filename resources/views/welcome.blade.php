@@ -533,6 +533,40 @@ body {
     <div class="shadow"></div>
   </div>
 
+  <style>
+    .explore {
+      padding: 20px 0;
+    }
+    .explore .container {
+      padding: 0 20px;
+    }
+    .swiper-explore .swiper-slide {
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 0 10px;
+    }
+    .swiper-explore .swiper-slide img {
+      border-radius: 20px;
+    }
+    @media (max-width: 768px) {
+      .explore {
+        padding: 20px 0;
+      }
+      .explore .container {
+        padding: 0 15px;
+      }
+      .swiper-explore .swiper-slide {
+        border-radius: 12px;
+        padding: 0 5px;
+      }
+      .swiper-explore .swiper-slide img {
+        border-radius: 12px;
+      }
+      .swiper-pagination-explore {
+        bottom: 10px !important;
+      }
+    }
+  </style>
   <div class="explore" id="explore" style="margin-top: 0;">
     <div class="container">
       <h2>Keşfet</h2>
