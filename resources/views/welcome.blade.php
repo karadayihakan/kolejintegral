@@ -542,12 +542,12 @@ body {
       padding: 0 20px;
     }
     .swiper-explore .swiper-slide {
-      border-radius: 15px;
+      border-radius: 12px;
       overflow: hidden;
       padding: 0 10px;
     }
     .swiper-explore .swiper-slide img {
-      border-radius: 15px;
+      border-radius: 12px;
     }
     
     /* Mobil ayarları */

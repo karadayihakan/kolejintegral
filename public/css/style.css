@@ -765,7 +765,7 @@ html {
 }
 
 .explore .swiper-slide {
-    border-radius: 60px;
+    border-radius: 12px;
     transform: scale(0.8);
     position: relative;
     overflow: hidden;
