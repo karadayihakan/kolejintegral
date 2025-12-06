@@ -199,7 +199,7 @@
         </div>
       @endif
       <div style="text-align: center; margin-top: 40px;">
-        <a href="{{ route('home') }}" class="anasayfaya-don-btn" style="background-color: #f8931f; color: white; padding: 15px 40px; border-radius: 45px; text-decoration: none; font-weight: bold; display: inline-block; position: relative;">Ana Sayfaya Dön</a>
+        <a href="{{ route('home') }}" class="anasayfaya-don-btn" style="background-color: #51223a; color: white; padding: 15px 40px; border-radius: 45px; text-decoration: none; font-weight: bold; display: inline-block; position: relative;">Ana Sayfaya Dön</a>
       </div>
     </div>
     </div>
