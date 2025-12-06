@@ -649,9 +649,9 @@ body {
     <div class="shadow"></div>
   </div>
   
-  <div class="haberler-section" id="haberler" style="width: 100%; min-height: 100vh; display: flex; justify-content: center; background-color: #51223a; position: relative; padding: 80px 0; margin-top: 0;">
+  <div class="haberler-section" id="haberler" style="width: 100%; min-height: 100vh; display: flex; justify-content: center; background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%); position: relative; padding: 80px 0; margin-top: 0;">
     <div class="container">
-      <h2 style="color: #f8931f; font-size: 48px; font-weight: bold; text-align: center; margin-bottom: 60px;">Haberler</h2>
+      <h2 style="color: #ffffff; font-size: 48px; font-weight: bold; text-align: center; margin-bottom: 60px;">Haberler</h2>
       @if($news->count() > 0)
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1400px; margin: 0 auto; align-items: end;">
           @foreach($news as $item)
