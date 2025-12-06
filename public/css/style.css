@@ -770,10 +770,13 @@ html {
     position: relative;
     overflow: hidden;
     aspect-ratio: 16 / 9; /* Yatay format */
+    border: 2px solid #f59e0b;
+    transition: border-color 0.2s ease-in-out;
 }
 
 .explore .swiper-slide-active {
     transform: scale(1);
+    border-color: #ffffff;
 }
 
 .explore .swiper-slide img,
