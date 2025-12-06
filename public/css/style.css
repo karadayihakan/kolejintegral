@@ -251,6 +251,7 @@ html {
     align-items: center;
     gap: 10px;
     color: white !important;
+    font-size: 14px;
 }
 
 .top-nav-left__item,
@@ -258,6 +259,10 @@ html {
 .top-nav-left__item a,
 a.top-nav-left__item {
     color: white !important;
+}
+
+.top-nav-left__item p {
+    font-size: 14px !important;
 }
 
 .top-nav-right {
