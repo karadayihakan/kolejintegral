@@ -17,9 +17,9 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased" style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%) !important;">
         <div class="min-h-screen flex flex-col sm:justify-center items-center px-4 py-10"
-             style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%);">
+             style="background: linear-gradient(135deg, #bc541b 0%, #c05e2e 100%) !important;">
             <div class="mb-4">
                 <a href="/">
                     <img src="/images/integral-logo.png" alt="Kolej İntegral" class="w-24 h-24 object-contain drop-shadow-lg">
