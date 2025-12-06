@@ -624,6 +624,12 @@ html {
     .top-nav-left__item p {
         display: none;
     }
+    
+    /* Mobilde tüm item tıklanabilir olsun */
+    .top-nav-left__item {
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 @media screen and (max-width: 400px) {

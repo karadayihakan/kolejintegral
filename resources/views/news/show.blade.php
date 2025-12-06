@@ -16,19 +16,26 @@
     <div class="top-nav">
       <div class="container">
         <div class="top-nav-left">
-          <div class="top-nav-left__item">
+          @php
+            $headerPhone = !empty($settings['phone']) ? $settings['phone'] : '0212 555 1234';
+            $headerPhoneClean = preg_replace('/[^0-9]/', '', $headerPhone);
+          @endphp
+          <a href="tel:{{ $headerPhoneClean }}" class="top-nav-left__item" style="text-decoration: none;">
             <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.66667 5.3335H12L14.6667 12.0002L11.3333 14.0002C12.7613 16.8955 15.1046 19.2389 18 20.6668L20 17.3335L26.6667 20.0002V25.3335C26.6667 26.0407 26.3857 26.719 25.8856 27.2191C25.3855 27.7192 24.7072 28.0002 24 28.0002C18.799 27.6841 13.8935 25.4755 10.2091 21.7911C6.52467 18.1066 4.31607 13.2011 4 8.00016C4 7.29292 4.28095 6.61464 4.78105 6.11454C5.28115 5.61445 5.95942 5.3335 6.66667 5.3335Z" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <p><a href="tel:{{ preg_replace('/[^0-9]/', '', !empty($settings['phone']) ? $settings['phone'] : '0212 555 1234') }}" style="color:inherit; text-decoration:none;">{{ !empty($settings['phone']) ? $settings['phone'] : '0212 555 1234' }}</a></p>
-          </div>
-          <div class="top-nav-left__item">
+            <p style="color: inherit; text-decoration: none; margin: 0;">{{ $headerPhone }}</p>
+          </a>
+          @php
+            $headerEmail = isset($settings['email']) && $settings['email'] ? $settings['email'] : 'info@kolejintegral.com';
+          @endphp
+          <a href="mailto:{{ $headerEmail }}" class="top-nav-left__item" style="text-decoration: none;">
             <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 9.33317C4 8.62593 4.28095 7.94765 4.78105 7.44755C5.28115 6.94746 5.95942 6.6665 6.66667 6.6665H25.3333C26.0406 6.6665 26.7189 6.94746 27.219 7.44755C27.719 7.94765 28 8.62593 28 9.33317V22.6665C28 23.3737 27.719 24.052 27.219 24.5521C26.7189 25.0522 26.0406 25.3332 25.3333 25.3332H6.66667C5.95942 25.3332 5.28115 25.0522 4.78105 24.5521C4.28095 24.052 4 23.3737 4 22.6665V9.33317Z" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M4 9.3335L16 17.3335L28 9.3335" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <p><a href="mailto:{{ isset($settings['email']) && $settings['email'] ? $settings['email'] : 'info@kolejintegral.com' }}" style="color:inherit; text-decoration:none;">{{ isset($settings['email']) && $settings['email'] ? $settings['email'] : 'info@kolejintegral.com' }}</a></p>
-          </div>
+            <p style="color: inherit; text-decoration: none; margin: 0;">{{ $headerEmail }}</p>
+          </a>
         </div>
         <div class="top-nav-right">
           <a href="https://www.facebook.com/kolejintegral" target="_blank" style="text-decoration:none; color: white;">
