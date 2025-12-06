@@ -534,36 +534,17 @@ body {
   </div>
 
   <style>
-    /* Masaüstü ayarları */
-    .explore {
-      padding: 20px 0;
-    }
-    .explore .container {
-      padding: 0 20px;
-    }
-    .swiper-explore .swiper-slide {
-      border-radius: 12px;
-      overflow: hidden;
-      padding: 0 10px;
-    }
-    .swiper-explore .swiper-slide img {
-      border-radius: 12px;
-    }
-    
-    /* Mobil ayarları */
+    /* Mobil ayarları - sadece mobil için override */
     @media (max-width: 768px) {
-      .explore {
-        padding: 20px 0;
-      }
       .explore .container {
-        padding: 0 30px;
+        padding: 0 30px !important;
       }
       .swiper-explore .swiper-slide {
-        border-radius: 8px;
-        padding: 0 8px;
+        border-radius: 8px !important;
+        padding: 0 8px !important;
       }
       .swiper-explore .swiper-slide img {
-        border-radius: 8px;
+        border-radius: 8px !important;
       }
       .swiper-pagination-explore {
         bottom: 10px !important;
@@ -572,14 +553,14 @@ body {
     
     @media (max-width: 480px) {
       .explore .container {
-        padding: 0 25px;
+        padding: 0 25px !important;
       }
       .swiper-explore .swiper-slide {
-        border-radius: 6px;
-        padding: 0 6px;
+        border-radius: 6px !important;
+        padding: 0 6px !important;
       }
       .swiper-explore .swiper-slide img {
-        border-radius: 6px;
+        border-radius: 6px !important;
       }
     }
   </style>
