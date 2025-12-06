@@ -776,7 +776,7 @@ html {
 
 .explore .swiper-slide-active {
     transform: scale(1);
-    border-color: #ffffff;
+    border-color: #f59e0b;
 }
 
 .explore .swiper-slide img,
